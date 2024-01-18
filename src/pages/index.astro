@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Hero from '../components/Hero.astro';
+import Cheeky from '../components/3D.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		
+		
+		<main>
+			
+  <!-- <div class="mx-auto flex items-center justify-around">
+	
+    <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 w-9/12">
+      <img src="/hero.PNG" alt="">
+    </div>
+    
+	<div class="w-2/4 h-full">
+		
+		<img src="/me.JPG"  alt="">
+		
+	</div>
+
+  </div> -->
+
+
+
+
+  <section class=" ">
+	<Header title={SITE_TITLE} />
+	<div class="mx-auto flex-col md:flex-row items-center justify-around mt-0">
+		
+	  <!-- <div class="lg:w-1/2 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start ml-20">
+		<img src="/hero.PNG" alt="">
+	  </div> -->
+
+	  <Hero/>
+	  <!-- <div class="lg:w-1/3 md:w-1/2 sm:w-1/2 md:ml-auto w-full h-full mt-0 md:mt-0">
+		<img src="/me.JPG"  alt="">
+		
+	  </div> -->
+
+	  
+
+	</div>
+
+	
+  </section>
+
+  
+
+
+		</main>
+		<!-- <Footer /> -->
+	</body>
+</html>

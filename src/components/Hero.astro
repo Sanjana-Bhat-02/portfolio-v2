@@ -1,0 +1,86 @@
+---
+import '../styles/global.css';
+import HeroImage from './HeroImage.astro';
+---
+
+<!-- <div class="hero ml-auto mt-auto lg:w-3/4 xl:w-2/3">
+
+    <div class="dot1 relative top-50 left-5 z-0"></div>
+    <div class="relative top-0 left-2 text-white z-50 lg:text-6xl leading-tight">
+        DEVELOPER.
+        DESIGNER.
+        ENGINEER.
+    </div>
+    <div class="dot2 relative bottom-48 left-96"></div>
+
+</div> -->
+
+ <!-- <div class="wrapper">  
+    <img src="/dots.png" alt="" class="backg">
+    <span class="hero-text text-white lg:text-6xl leading-tight">
+        DEVELOPER. <br>
+        DESIGNER. <br>
+        ENGINEER.
+    </span>
+
+</div> -->
+
+
+<section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <div class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded">
+        
+        <HeroImage/>
+      </div>
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Microdosing synth tattooed vexillologist</h1>
+        <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<style>
+
+.wrapper {
+    /* position: relative; */
+    width: min-content;
+    position: relative;
+    border: 2px solid green;
+    
+}
+
+.wrapper > *:not(.backg) {
+    position: absolute;
+}
+.hero-text {
+    
+    bottom:13rem;
+    right: 10rem; 
+    font-size: 4rem;
+}
+
+.img {
+    max-width: 100%;
+    
+}
+
+.backg {
+    max-width: revert;
+    
+}
+
+
+@media screen and (max-width: 960px) {
+    .backg {
+        max-width: 50%;
+    }
+}
+
+</style>
